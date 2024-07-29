@@ -8,11 +8,8 @@ A simple React-based application that allows users to search for pets by animal 
 - [Project Structure](#project-structure)
 - [Design Decisions](#design-decisions)
 - [Running the Project](#running-the-project)
-- [Deploying to GitHub Pages](#deploying-to-github-pages)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-
+- 
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
