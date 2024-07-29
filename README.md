@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Pet Listing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React-based application that allows users to search for pets by animal type, city, and breed. The app fetches pet data from an external API and displays the results in a user-friendly interface.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Design Decisions](#design-decisions)
+- [Running the Project](#running-the-project)
+- [Deploying to GitHub Pages](#deploying-to-github-pages)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get a local copy up and running, follow these simple steps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have Node.js and npm installed on your machine. You can download Node.js from [here](https://nodejs.org/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```sh
+   git clone https://github.com/ranjana05b/pet-listing.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
+   cd pet-listing
+   
+3. Install the necessary npm packages:
+ npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Project Structure
+pet-listing/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── ErrorBoundary.jsx
+│   │   ├── PetList.jsx
+│   │   └── SearchForm.jsx
+│   ├── context/
+│   │   └── PetContext.jsx
+│   ├── pages/
+│   │   └── PetDetails.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
 
-### `npm run eject`
+public/: Contains the HTML template.
+src/: Contains the source code for the application.
+  components/: Contains reusable components.
+  context/: Contains the context API for state management.
+  pages/: Contains the main pages of the app.
+  App.jsx: The main app component.
+  index.css: Global styles.
+  index.js: Entry point of the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Design Decisions
+React Context API: Used for state management to handle pet data across the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Material-UI: Used for styling components and providing a responsive layout.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React Router: Used for navigation between the home page and pet details page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Error Boundaries: Implemented to catch and handle errors gracefully.
 
-## Learn More
+### Running the Project
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Dependencies
+React
+React Router
+Material-UI
+Axios
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   
