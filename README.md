@@ -9,7 +9,7 @@ A simple React-based application that allows users to search for pets by animal 
 - [Design Decisions](#design-decisions)
 - [Running the Project](#running-the-project)
 - [Dependencies](#dependencies)
-- 
+  
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
@@ -52,32 +52,32 @@ pet-listing/
 ├── package.json
 └── README.md
 
-public/: Contains the HTML template.
-src/: Contains the source code for the application.
-  components/: Contains reusable components.
-  context/: Contains the context API for state management.
-  pages/: Contains the main pages of the app.
-  App.jsx: The main app component.
-  index.css: Global styles.
-  index.js: Entry point of the application.
+- public/: Contains the HTML template.
+- src/: Contains the source code for the application.
+  - components/: Contains reusable components.
+  - context/: Contains the context API for state management.
+  - pages/: Contains the main pages of the app.
+  - App.jsx: The main app component.
+  - index.css: Global styles.
+  - index.js: Entry point of the application.
 
 ### Design Decisions
-React Context API: Used for state management to handle pet data across the app.
+- React Context API: Used for state management to handle pet data across the app.
 
-Material-UI: Used for styling components and providing a responsive layout.
+- Material-UI: Used for styling components and providing a responsive layout.
 
-React Router: Used for navigation between the home page and pet details page.
+- React Router: Used for navigation between the home page and pet details page.
 
-Error Boundaries: Implemented to catch and handle errors gracefully.
+- Error Boundaries: Implemented to catch and handle errors gracefully.
 
 ### Running the Project
-npm start
+ npm start
 
 ### Dependencies
-React
-React Router
-Material-UI
-Axios
+- React
+- React Router
+- Material-UI
+- Axios
 
 
 
